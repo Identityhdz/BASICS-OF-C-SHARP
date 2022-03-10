@@ -6,25 +6,23 @@ namespace Clasese
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
-
-            Sale saleOne = new Sale();
+            Sale saleOne = new Sale(1, DateTime.Now);
             saleOne.Show();
-
-
-
         }
 
         class Sale {
 
+            // Properties
+            int total;
             DateTime time;
 
-
-            public Sale() { 
-            
+            // Buider of class Sale
+            public Sale(int total, DateTime time) {
+                this.total = total;
+                this.time = time;
             }
 
+            // Metod One of class Sale
             public void Show() {
                 Console.WriteLine("Hello this a message froom class Sale");
             }
