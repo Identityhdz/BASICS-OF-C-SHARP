@@ -8,7 +8,7 @@ namespace Propiedades
         {
             Sale saleOne = new Sale(1, DateTime.Now);
             saleOne.Show();
-            saleOne.Total = -1;
+            saleOne.Total = 1;
             //saleOne.Time = DateTime.Now; // No se puede modificar valor, es de solo lectura
             Console.WriteLine(saleOne.Total);
         }
@@ -20,16 +20,17 @@ namespace Propiedades
             private DateTime time;
 
 
-            public string Time {
-                get {
-                    return time.ToLongDateString();
-                }
-            }
+            //public string Time {
+            //    get {
+            //        return time.ToLongDateString();
+            //    }
+            //}
 
 
             // Accesors 1 -> Acceder a las propiedades de la clase
             public int Total
             {
+                // Obtener datos, solo lectura
                 get
                 {
                     return total;
@@ -45,12 +46,14 @@ namespace Propiedades
                 }
             }
 
-            // Accesors 2 -> Aceder a la propiedad de clase total como string
-            //public string Total2{
-            //    get {
-            //        return total.ToString("#.00");
-            //    }
-            //}
+            //Accesors 2 -> Aceder a la propiedad de clase total como string
+            public string Total2
+            {
+                get
+                {
+                    return total.ToString("#.00");
+                }
+            }
 
 
             // Buider of class Sale

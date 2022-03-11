@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "While", "While\While.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clases", "Clasese\Clases.csproj", "{01F3015B-833B-42A5-9918-F61B76CBF3A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Propiedades", "Propiedades\Propiedades.csproj", "{88881BB4-4B61-44D7-A4C1-8098DB1EEDF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Propiedades", "Propiedades\Propiedades.csproj", "{88881BB4-4B61-44D7-A4C1-8098DB1EEDF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herencia", "Proyecto\Herencia.csproj", "{58A7C3A2-6768-471D-8860-01DC72AFF274}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{88881BB4-4B61-44D7-A4C1-8098DB1EEDF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88881BB4-4B61-44D7-A4C1-8098DB1EEDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88881BB4-4B61-44D7-A4C1-8098DB1EEDF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A7C3A2-6768-471D-8860-01DC72AFF274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A7C3A2-6768-471D-8860-01DC72AFF274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A7C3A2-6768-471D-8860-01DC72AFF274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A7C3A2-6768-471D-8860-01DC72AFF274}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
