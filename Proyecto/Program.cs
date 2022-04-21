@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace Proyecto
 {
     class Program
@@ -22,7 +23,9 @@ namespace Proyecto
             // Method public from Doctor
             Console.WriteLine(currentDoctor.GetData());
 
-
+            Developer dev = new Developer(25, "Igmar", "Hernandez", DateTime.Now, "C#");
+            Console.WriteLine(dev.getInfoDeveloper());
+            
         }
 
         class People 
@@ -42,7 +45,7 @@ namespace Proyecto
 
             public string ShowProperties()
             {
-                return "Hola, mi nombre es" + _lastName + " " + _name + "  nací el  " + _dateOfBirth + " por lo tanto tengo " + _age;
+                return "Hola, mi nombre es " + _lastName + " " + _name + "  nací el  " + _dateOfBirth + " por lo tanto tengo " + _age + " años ";
             }
 
             protected string ShowSomeProperties() 
@@ -56,12 +59,23 @@ namespace Proyecto
             }
         }
 
+        class Developer : People {
+            private string _languaje;
+            public Developer(int age, string name, string lastName, DateTime dateBirth, string languaje) : base(age, name, lastName, dateBirth) {
+                _languaje = languaje;
+            }
+
+            public string getInfoDeveloper() {
+                return ShowProperties() + " me gusta programar en " + _languaje;
+            }
+        }
+
         class Doctor : People 
         {
             private string _Speciality;
             public Doctor(int age, string name, string lastName, DateTime dateOfBirth, string speciality) : base(age, name, lastName, dateOfBirth) {
 
-                // Access to metod only oin this class
+                // Access to method only oin this class
                 //string resultMethod = ShowSomeProperties();
                 _Speciality = speciality;
             }
